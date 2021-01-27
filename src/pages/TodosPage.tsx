@@ -32,7 +32,7 @@ export const TodosPage: React.FC = () => {
     setTodos(prev =>
       prev.map(todo => {
         if (todo.id === id) {
-          todo.completed = !todo.uncompleted
+          todo.completed = todo.uncompleted
         }
         return todo
       })
